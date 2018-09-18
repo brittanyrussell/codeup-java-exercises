@@ -28,7 +28,7 @@ public class ConsoleExercises {
 
 //        CALCULATE AREA
         Scanner userInput = new Scanner(System.in);
-        System.out.println("Enter length and width" + "(Press Enter after each):");
+        System.out.println("Enter length and width of the classroom" + "(Press Enter after each):");
         double a1, a2, a3;
         a1 = userInput.nextDouble();
         a2 = userInput.nextDouble();
@@ -37,7 +37,7 @@ public class ConsoleExercises {
 
 //        CALCULATE PERIMETER
         Scanner userInput2 = new Scanner(System.in);
-        System.out.println("Enter length and width" + "(Press Enter after each):");
+        System.out.println("Enter length and width of the classroom " + "(Press Enter after each):");
         double p1, p2, p3;
         p1 = userInput2.nextDouble();
         p2 = userInput2.nextDouble();
