@@ -9,7 +9,7 @@ public class ConsoleExercises {
 //        ENTER A NUMBER
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter a interger: ");
+        System.out.println("Enter a interger: ");
         int val1 = scanner.nextInt();
 
         System.out.format("You entered %d\n", val1);
@@ -19,7 +19,7 @@ public class ConsoleExercises {
 //          ENTER 3 WORDS
         Scanner scanner1 = new Scanner(System.in);
 
-        System.out.print("Enter 3 words: ");
+        System.out.println("Enter 3 words: ");
         String s1 = scanner1.next();
         String s2 = scanner1.next();
         String s3 = scanner1.next();
@@ -29,7 +29,7 @@ public class ConsoleExercises {
 
 //        ENTER A SENTENCE
         Scanner scanner2 = new Scanner(System.in);
-        System.out.print("Enter a sentence: ");
+        System.out.println("Enter a sentence: ");
         String sentence = scanner2.nextLine();
 
         System.out.println(sentence);
