@@ -8,34 +8,23 @@ public class ConsoleExercises {
 
 //        ENTER A NUMBER
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Enter a interger: ");
         int val1 = scanner.nextInt();
-
         System.out.format("You entered %d\n", val1);
-
-
 
 //          ENTER 3 WORDS
         Scanner scanner1 = new Scanner(System.in);
-
         System.out.println("Enter 3 words: ");
         String s1 = scanner1.next();
         String s2 = scanner1.next();
         String s3 = scanner1.next();
-
         System.out.format("%s%n%s%n%s%n", s1, s2, s3);
-
 
 //        ENTER A SENTENCE
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("Enter a sentence: ");
         String sentence = scanner2.nextLine();
-
         System.out.println(sentence);
-
-
-
 
 //        CALCULATE AREA
         Scanner userInput = new Scanner(System.in);
@@ -45,7 +34,6 @@ public class ConsoleExercises {
         a2 = userInput.nextDouble();
         a3 = a1 * a2;
         System.out.println("Area = " + a3);
-
 
 //        CALCULATE PERIMETER
         Scanner userInput2 = new Scanner(System.in);
