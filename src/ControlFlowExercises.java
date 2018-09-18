@@ -1,11 +1,12 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-        long k = 2;
-        do {
-            System.out.println(k);
+        for (long k = 2; k < 1000000;) {
             k *= k;
-            } while(k < 1000000);
+            System.out.println(k);
+
+        }
+
 
     }
 
