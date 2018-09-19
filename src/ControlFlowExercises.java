@@ -69,27 +69,23 @@ public class ControlFlowExercises {
 
 
 //        TABLE OF POWERS
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What number would you like to go up to?");
-        int userInt = scanner.nextInt();
-        System.out.println("Here is your table!");
-        System.out.println();
-        System.out.println(" number | squared | cubed");
-        System.out.println("------- | ------- | ----- ");
-        for (long i = 1; i <= userInt; i++) {
-            System.out.format("%-7s | %-7s | %-7s%n", i, i * i, i * i * i);
-      }
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("What number would you like to go up to?");
+//        int userInt = scanner.nextInt();
+//        System.out.println("Here is your table!");
+//        System.out.println();
+//        System.out.println(" number | squared | cubed");
+//        System.out.println("------- | ------- | ----- ");
+//        for (long i = 1; i <= userInt; i++) {
+//            System.out.format("%-7s | %-7s | %-7s%n", i, i * i, i * i * i);
+//        }
 
 
 //        INPUT NUMBER GRADE
-//         Scanner input=new Scanner(System.in);
-//
+//        Scanner input=new Scanner(System.in);
 //        int grade;
-//
 //        System.out.printf("Entered the numbered grade you received");
 //        grade=input.nextInt();
-//
-//
 //        if (grade >= 90) {
 //            System.out.println("You received an A");
 //        } else if (grade >= 80) {
@@ -101,7 +97,6 @@ public class ControlFlowExercises {
 //        } else {
 //            System.out.println("You received an F");
 //        }
-
     }
 
 }
