@@ -14,7 +14,7 @@ public class Bob {
                 System.out.println(bob1);
             } else if (userInput.endsWith("!")) {
                 System.out.println(bob2);
-            } else if (userInput.endsWith(" ")) {
+            } else if (userInput.isEmpty()) {
                 System.out.println(bob3);
             } else {
                 System.out.println(bob4);
