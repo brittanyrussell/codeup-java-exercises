@@ -19,7 +19,7 @@ public class Bob {
             } else {
                 System.out.println(bob4);
             }
-            System.out.println("Do you want to continue?");
+            System.out.println("Do you want to continue talking to Bob?");
             Scanner input2 = new Scanner(System.in);
             String answer = input2.nextLine();
             if (!answer.toLowerCase().contains("y")) {
