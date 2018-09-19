@@ -1,9 +1,10 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-        for (long k = 2; k < 1000000;) {
-            k *= k;
-            System.out.println(k);
+        for (int i  = 100; i >= 5;) {
+               int minus =  i-5;
+               i--;
+            System.out.println(minus);
 
         }
 
