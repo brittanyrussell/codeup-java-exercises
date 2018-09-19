@@ -82,32 +82,32 @@ public class ControlFlowExercises {
 
 
 //        INPUT NUMBER GRADE
-        Scanner input=new Scanner(System.in);
-        boolean confirm = true;
-        while (confirm) {
-            int grade;
-            System.out.println("Entered the numbered grade you received: ");
-            grade = input.nextInt();
-            if (grade >= 90) {
-                System.out.println("You received an A");
-            } else if (grade >= 80) {
-                System.out.println("You received a B");
-            } else if (grade >= 70) {
-                System.out.println("You received a C");
-            } else if (grade >= 60) {
-                System.out.println("You received a D");
-            } else {
-                System.out.println("You received an F");
-            }
-
-            System.out.println("Do you want to continue?");
-            Scanner input2 = new Scanner(System.in);
-                String answer = input2.nextLine();
-            if (!answer.toLowerCase().contains("y")) {
-                confirm = false;
-
-            }
-        }
+//        Scanner input=new Scanner(System.in);
+//        boolean confirm = true;
+//        while (confirm) {
+//            int grade;
+//            System.out.println("Entered the numbered grade you received: ");
+//            grade = input.nextInt();
+//            if (grade >= 90) {
+//                System.out.println("You received an A");
+//            } else if (grade >= 80) {
+//                System.out.println("You received a B");
+//            } else if (grade >= 70) {
+//                System.out.println("You received a C");
+//            } else if (grade >= 60) {
+//                System.out.println("You received a D");
+//            } else {
+//                System.out.println("You received an F");
+//            }
+//
+//            System.out.println("Do you want to continue?");
+//            Scanner input2 = new Scanner(System.in);
+//                String answer = input2.nextLine();
+//            if (!answer.toLowerCase().contains("y")) {
+//                confirm = false;
+//
+//            }
+//        }
     }
 
 }
