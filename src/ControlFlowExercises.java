@@ -2,42 +2,28 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-        System.out.println("Welcome to the Squares and Cubes Table");
-        System.out.println();
+        Scanner input=new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
-        String choice = "y";
+        int grade;
 
-        while(choice.equalsIgnoreCase("y"))
-        {
-            // get the input from the user
-            System.out.println("Enter an Integer: ");
-            int integerNext = sc.nextInt();
+        System.out.printf("Entered the numbered grade you received");
+        grade=input.nextInt();
 
-            System.out.println("Number" + "  " + "Squared" + "  " + "Cubed");
-            System.out.println("======" + "  " + "======" + "  " + "======");
 
-            for(int i = 1; i <= integerNext; i++)
-            {
-                i = integerNext;
-                int numberSquared = (int) Math.pow(i, 2);
-                int numberCubed = (int) Math.pow (i, 3);
-
-                String message = "\n" + i + "       " + numberSquared + "       " + numberCubed;
-
-                System.out.println(message);
-                System.out.println();
-
-                // see if the user wants to continue
-                System.out.print("Continue? (y/n): ");
-                choice = sc.next();
-                System.out.println();
-            }
+        if (grade >= 90) {
+            System.out.println("You received an A");
+        } else if (grade >= 80) {
+            System.out.println("You received a B");
+        } else if (grade >= 70) {
+            System.out.println("You received a C");
+        } else if (grade >= 60) {
+            System.out.println("You received a D");
+        } else {
+            System.out.println("You received an F");
         }
 
-
     }
 
-    }
+}
 
 
