@@ -14,7 +14,7 @@ public class MethodExercises {
         System.out.println(divide(8, 2));
         System.out.println(remainder(10, 2));
         System.out.println(quotient(2, 4));
-//        System.out.println(songThatNeverEnds();
+//      System.out.println(songThatNeverEnds();
     }
 
     public static long factorial(int a) {
