@@ -12,50 +12,50 @@ public class ControlFlowExercises {
 
 //        COUNT BY 2S WHILE
 
-        int i = 0;
+        int j = 0;
         do {
             System.out.println(i);
-            i +=2;
-        } while (i <= 100);
+            j +=2;
+        } while (j <= 100);
 
 //        MINUS 5 FROM 100 WHILE
-        int i = 100;
+        int k = 100;
 
         do {
             System.out.println(i);
-            i-=5;
+            k-=5;
         }
-        while (i >= -10);
+        while (k >= -10);
 
 
 //        2 SQUARED
-        long i = 2;
+        long l = 2;
         do {
             System.out.println(i);
-        i = (long)Math.pow((double)i, 2);
-           i *= i;
-       } while(i < 1000000);
+        l = (long)Math.pow((double)l, 2);
+           l *= l;
+       } while(l < 1000000);
 
-            2 SQUARED FOR LOOP
-      for (long i = 2; i <= 1000000; i*=i) {
-            System.out.println(i);
+//            2 SQUARED FOR LOOP
+      for (long m = 2; m <= 1000000; m*=m) {
+            System.out.println(m);
 
         }
-            MINUS 5 FROM 100 FOR LOOP
-        for (int i  = 100; i >= 5; i-=5) {
-            System.out.println(i);
+//            MINUS 5 FROM 100 FOR LOOP
+        for (int n  = 100; n >= 5; n-=5) {
+            System.out.println(n);
         }
 
 
 //        FIZZBUZZ
 
-        for (int i = 1; i <= 100; i++) {
+        for (int o = 1; o<=100; o++) {
             boolean fizzOrBuzz = false;
-            if (i % 3 == 0) {
+            if (o % 3 == 0) {
                 System.out.print("Fizz");
                 fizzOrBuzz = true;
             }
-            if (i % 5 == 0) {
+            if (o % 5 == 0) {
                 System.out.print("Buzz");
                 fizzOrBuzz = true;
             }
@@ -63,7 +63,7 @@ public class ControlFlowExercises {
             if (fizzOrBuzz) {
                 System.out.println();
             } else {
-                System.out.println(String.valueOf(i));
+                System.out.println(String.valueOf(o));
             }
         }
 
@@ -76,8 +76,8 @@ public class ControlFlowExercises {
         System.out.println();
         System.out.println(" number | squared | cubed");
         System.out.println("------- | ------- | ----- ");
-        for (long i = 1; i <= userInt; i++) {
-            System.out.format("%-7s | %-7s | %-7s%n", i, i * i, i * i * i);
+        for (long n = 1; n <= userInt; n++) {
+            System.out.format("%-7s | %-7s | %-7s%n", n, n * n, n * n * n);
         }
 
 
