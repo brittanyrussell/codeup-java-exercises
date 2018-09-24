@@ -1,6 +1,7 @@
+import java.util.Arrays;
+
 public class ArraysExercises {
     public static void main(String[] args) {
-
 
         Person person1 = new Person("Robert");
         Person person2 = new Person("Mary");
@@ -33,5 +34,5 @@ public class ArraysExercises {
         }
 
 
+    }
 
-}
