@@ -1,6 +1,16 @@
 import java.util.Scanner;
 public class pushUp {
     public static void main(String[] args) {
+
+        for (int i = 7; i >= 1; i--) {
+            System.out.println(i);
+            if (i == 1) {
+                System.out.println("Blastoff!!");
+            }
+
+        }
+
+
 //      byte byteVar = 100;
 //      short shortVar = 1000;
 //      int intVar = 100000;
@@ -13,10 +23,10 @@ public class pushUp {
 //      String dayOfWeek = "Tuesday";
 //      String messageTemplate = "Hello %s," + " Happy %s";
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What is your favorite number?");
-        int num = scanner.nextInt();
-        System.out.format("%s", num);
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What is your favorite number?");
+//        int num = scanner.nextInt();
+//        System.out.format("%s", num);
 
 //      System.out.print(byteVar + "\n");
 //        System.out.print(shortVar + "\n");
