@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class pushUp {
     public static void main(String[] args) {
 
+            countUp();
 
 
 //        int[] numbers = {1, 2, 3, 4, 5};
@@ -82,6 +83,16 @@ public class pushUp {
 //        System.out.print(charVar + "\n");
 //        System.out.format(messageTemplate, className, dayOfWeek);
 
+    }
+
+    public static void countUp() {
+        for (int i = 1; i<=7; i++) {
+            System.out.println(i);
+            if (i == 7) {
+                System.out.println("Yay!");
+
+            }
+        }
     }
 //    public static int[] reverse(int[] nums) {
 //        int[] backwards = new int[nums.length];
