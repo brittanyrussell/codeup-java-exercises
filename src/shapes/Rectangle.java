@@ -1,7 +1,7 @@
 package shapes;
 
 public class Rectangle extends Quadrilateral implements Measurable {
-    public Rectangle(int length, int width){
+    public Rectangle(double length, double width){
         super(length, width);
     }
     public double getPerimeter(){
