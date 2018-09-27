@@ -12,7 +12,7 @@ public Square(double length) {
     public double getArea() {
     return this.length*this.length;
 }
-public void setLength(double length) {
+    public void setLength(double length) {
     this.length = length;
     this.width = length;
 }
