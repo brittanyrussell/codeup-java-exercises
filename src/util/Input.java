@@ -31,7 +31,7 @@ public class Input {
         }
         return number;
 //        return scan.nextInt();
-}
+    }
 
     public int getInt(int min, int max) {
         System.out.println("Please input an integer between " + min + " and " + max);

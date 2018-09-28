@@ -1,8 +1,13 @@
 import java.util.Scanner;
 public class pushUp {
     public static void main(String[] args) {
+//        boolean isWeekday = true;
+//        boolean onVacation = false;
+//        System.out.println(sleepIn(isWeekday, onVacation));
 
-            countUp();
+        System.out.println(sleepIn(false, true));
+
+//            countUp();
 
 
 //        int[] numbers = {1, 2, 3, 4, 5};
@@ -85,15 +90,33 @@ public class pushUp {
 
     }
 
-    public static void countUp() {
-        for (int i = 1; i<=7; i++) {
-            System.out.println(i);
-            if (i == 7) {
-                System.out.println("Yay!");
-
-            }
+    public static boolean sleepIn(boolean isW, boolean isV) {
+        if (isW == true || isV == false) {
+            System.out.println("You can't sleep in!!");
+        } else if (isV == true) {
+            System.out.println("Sleep in time!!");
+        } else if (isW == false) {
+            System.out.println("Whoop weekend sleep in!!");
         }
+
+        return isV || isW;
     }
+//
+//    static boolean sleepIn(boolean isWeekday, boolean onVacation) {
+//        return (!isWeekday || onVacation);
+//    }
+
+
+
+//    public static void countUp() {
+//        for (int i = 1; i<=7; i++) {
+//            System.out.println(i);
+//            if (i == 7) {
+//                System.out.println("Yay!");
+//
+//            }
+//        }
+//    }
 //    public static int[] reverse(int[] nums) {
 //        int[] backwards = new int[nums.length];
 //        for (int i =0;i<nums.length;i++) {
