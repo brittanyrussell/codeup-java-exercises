@@ -1,11 +1,12 @@
 import java.util.Scanner;
 public class pushUp {
     public static void main(String[] args) {
+//        System.out.println(Power(4, 5));
 //        boolean isWeekday = true;
 //        boolean onVacation = false;
 //        System.out.println(sleepIn(isWeekday, onVacation));
 
-        System.out.println(sleepIn(false, true));
+//        System.out.println(sleepIn(false, true));
 
 //            countUp();
 
@@ -90,17 +91,24 @@ public class pushUp {
 
     }
 
-    public static boolean sleepIn(boolean isW, boolean isV) {
-        if (isW == true || isV == false) {
-            System.out.println("You can't sleep in!!");
-        } else if (isV == true) {
-            System.out.println("Sleep in time!!");
-        } else if (isW == false) {
-            System.out.println("Whoop weekend sleep in!!");
-        }
+//    find power without mathpow
+//        public static long Power(int base, int exp) {
+//        if (exp == 0) {
+//            return 1;
+//        } return base * Power(base, exp-1);
+//        }
 
-        return isV || isW;
-    }
+//    public static boolean sleepIn(boolean isW, boolean isV) {
+//        if (isW == true || isV == false) {
+//            System.out.println("You can't sleep in!!");
+//        } else if (isV == true) {
+//            System.out.println("Sleep in time!!");
+//        } else if (isW == false) {
+//            System.out.println("Whoop weekend sleep in!!");
+//        }
+//
+//        return isV || isW;
+//    }
 //
 //    static boolean sleepIn(boolean isWeekday, boolean onVacation) {
 //        return (!isWeekday || onVacation);

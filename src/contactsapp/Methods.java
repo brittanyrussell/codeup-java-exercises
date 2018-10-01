@@ -12,23 +12,50 @@ public class Methods {
 
     public static void showAll() {
         try {
+            System.out.println("Name | Phone number");
+            System.out.println("---------------");
             List<String> contacts = Files.readAllLines(Paths.get("src/contactsapp/contacts.txt"));
-            System.out.println(contacts.toString());
+            //            for (String line : contacts) {
+            //                System.out.println(line);
+            //                String[] cos = line.split(" \\| ");
+            //                for (String a : cos) {
+            //                    System.out.println(a);
+            //                }
+            //                System.out.println();
+            //            }
+            for (String line : contacts) {
+                System.out.println(line);
+            }
+            System.out.println();
+
+
         } catch (IOException e) {
             System.out.println("Exception!");
             e.printStackTrace();
         }
-
     }
 
     public static void addContact() {
         Scanner scan = new Scanner(System.in);
         Path p = Paths.get("src/contactsapp", "contacts.txt");
-        String input1;
-        System.out.println("Enter the new contact:");
-        input1 = scan.nextLine();
+        //        String input1;
+        //        System.out.println("Enter the new contact:");
+        //        input1 = scan.nextLine();
+        //        List<String> contacts = new ArrayList<>();
+        //        contacts.add(input1);
+
+        String nameAdd;
+        long numberAdd;
+
+        System.out.println("Enter the name");
+        nameAdd = scan.nextLine();
+        System.out.println("Enter the number");
+        numberAdd = scan.nextLong();
+
         List<String> contacts = new ArrayList<>();
-        contacts.add(input1);
+        contacts.add(nameAdd + " | " + numberAdd);
+
+
         try {
             Files.write(p, contacts, StandardOpenOption.APPEND);
         } catch (IOException e) {
@@ -60,17 +87,21 @@ public class Methods {
     }
 
     public static void deleteContact() {
-        Scanner scan2 = new Scanner(System.in);
-        String input3;
-        System.out.println("Which contact would you like to delete?");
-        input3 = scan2.nextLine();
-        try {
-            List<String> lines = Files.readAllLines(Paths.get("src/contactsapp/contact.txt"));
-            for (String line : lines) {
-                if (line.contains(input3)) {
+        Path p = Paths.get("src/contactsapp", "contacts.txt");
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Which contact would you like to delete?");
+        String contactToDelete = scan.nextLine();
+        try {
+            List<String> nowe = new ArrayList<>();
+            List<String> lines = Files.readAllLines(p);
+            for (String line : lines) {
+                if (!line.contains(contactToDelete)) {
+                    nowe.add(line);
                 }
             }
+            Files.write(p, nowe, StandardOpenOption.WRITE, StandardOpenOption.TRUNCATE_EXISTING);
+
         } catch (IOException e) {
             System.out.println("Exception");
             e.printStackTrace();

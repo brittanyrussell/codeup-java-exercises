@@ -40,6 +40,8 @@ public class ContactsApplication {
                     search.searchContacts();
                     break;
                 case 4:
+                    Methods delete = new Methods();
+                    delete.deleteContact();
 
                     break;
                 case 5:
